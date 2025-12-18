@@ -1,0 +1,31 @@
+Topic: Operators
+
+Q1. Explain the difference between bitwise AND (&) and logical AND (&&) with an example.
+A1. & operates on bits of integers, evaluating both operands. Example: 5 & 3 = 1 (0101 & 0011 = 0001). && evaluates boolean expressions, short-circuits if the first operand is false.
+
+Q2. What is operator precedence and associativity? Give an example where it affects the result.
+A2. Precedence defines order of evaluation; associativity resolves same-precedence operators. Example: int x = 2 + 3 * 4; → multiplication happens first → x=14.
+
+Q3. Explain the difference between prefix and postfix increment in expressions with side effects.
+A3. Prefix (++x) increments before use; postfix (x++) increments after use. Example: int x=1; int y=x++ + 2; y=3, x=2.
+
+Q4. What is the result of mixing signed and unsigned integers in arithmetic? Why can it be dangerous?
+A4. Unsigned integers convert signed to unsigned during operation, possibly causing large unexpected values.
+
+Q5. Explain short-circuit evaluation in logical operators with an example.
+A5. Logical operators && and || stop evaluating as soon as result is determined. Example: if(a != 0 && 10/a > 1) → second condition skipped if a==0.
+
+Q6. How does the comma operator work? Give a use case.
+A6. Evaluates expressions left-to-right, returns last value. Example: int x = (a=3, a+2); → x=5.
+
+Q7. Can you overload the assignment operator? Explain a scenario.
+A7. Yes, for deep copy in classes with dynamic memory. Example: class with pointer member needs operator= to copy data instead of pointer.
+
+Q8. Explain the difference between == and equals() in C++ (or when comparing objects).
+A8. == compares primitive values or pointers; for objects, must overload == to compare content.
+
+Q9. What is the difference between += and +? Give a practical example where using += is better.
+A9. += modifies the variable in place; + creates a temporary value. For large containers, += avoids unnecessary copies.
+
+Q10. Explain why a*b might overflow even if both a and b fit in int. How to avoid it?
+A10. Multiplication can exceed int range. Solution: cast to long long before multiplying.
