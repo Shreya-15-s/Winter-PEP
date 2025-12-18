@@ -1,0 +1,31 @@
+Topic: Conditional Statements
+
+Q1. Explain the difference between nested if-else and switch-case. When would you use each?
+A1. Nested if-else handles ranges and complex conditions; switch is efficient for single variable equality checks.
+
+Q2. What are potential pitfalls of using multiple else-if statements without a final else?
+A2. Missing final else may leave unhandled cases; can cause logical errors.
+
+Q3. How can conditional operator (?:) be used in place of if-else? Give an example with nested ternary.
+A3. Example: int max = (a>b) ? ((a>c)?a:c) : ((b>c)?b:c);
+
+Q4. How does short-circuit evaluation affect conditional statements with side effects?
+A4. If the first condition determines result, the second is skipped, which can avoid runtime errors or skip important operations.
+
+Q5. Can switch statements handle ranges (e.g., 1–10)? If not, how to implement it efficiently?
+A5. No, switch handles discrete values only; use if-else with ranges or map ranges to discrete case labels.
+
+Q6. What happens if break is missing in a switch? Provide a scenario where fall-through is useful.
+A6. Execution falls through to next case. Useful for grouping multiple cases with same behavior.
+
+Q7. How can you implement a menu-driven program efficiently using switch-case and loops?
+A7. Use a while loop to repeat menu and switch-case for option handling, break to exit loop.
+
+Q8. Can conditional operator ?: be nested multiple levels? What are readability concerns?
+A8. Yes, but readability decreases with deep nesting; prefer if-else for clarity.
+
+Q9. How would you check multiple conditions with AND, OR, and NOT in a single if statement without ambiguity?
+A9. Use parentheses to group expressions; example: if((a>0 && b>0) || c==10)
+
+Q10. How can you handle invalid input gracefully in nested conditionals for console programs?
+A10. Check input validity at each stage, provide default actions or error messages.
