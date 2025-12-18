@@ -1,0 +1,32 @@
+Topic: Branching Statements
+
+Q1. How does break behave in nested loops? Provide an example to exit outer loop from inner loop.
+A1. Break only exits current loop. To exit outer, use a flag or goto. Example:
+for(int i=0;i<5;i++){ for(int j=0;j<5;j++){ if(j==3){goto end;} } } end:
+
+Q2. Explain continue in nested loops. How to skip only the inner loop iteration?
+A2. Continue affects innermost loop. Example: inner for loop continues to next iteration without affecting outer loop.
+
+Q3. How does return inside a loop differ from break?
+A3. Return exits the entire function, stopping all loops; break exits only the current loop.
+
+Q4. Can break be used in switch inside a loop? Explain with example.
+A4. Yes, break exits switch, not the loop. To exit loop, use return or flag.
+
+Q5. What are scenarios where goto improves code readability in branching?
+A5. Rarely, for exiting multiple nested loops cleanly; but should be avoided if possible.
+
+Q6. How can exceptions replace branch statements in modern C++?
+A6. Use try-catch instead of multiple return statements or nested conditionals for error handling.
+
+Q7. Explain the difference between break, continue, and return in nested loops.
+A7. Break exits current loop; continue skips current iteration; return exits function entirely.
+
+Q8. How does switch-case fall-through work and why might it be deliberately used?
+A8. Cases execute sequentially if break is missing; can combine multiple cases with same logic.
+
+Q9. Can you implement loop exit without using break or return? Example.
+A9. Use loop condition variables. Example: bool done=false; while(!done){ if(cond) done=true; }
+
+Q10. How do you handle multiple exit points in a function with loops to maintain clarity?
+A10. Use flags, well-named functions, or exceptions for structured exits.
