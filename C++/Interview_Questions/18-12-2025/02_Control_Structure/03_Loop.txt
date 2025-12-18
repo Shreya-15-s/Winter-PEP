@@ -1,0 +1,31 @@
+Topic: Loops
+
+Q1. Explain the difference between for, while, and do-while with real-world use case.
+A1. for: fixed iterations (array traversal), while: condition-driven (input validation), do-while: at least once (menu-driven).
+
+Q2. How would you detect and prevent infinite loops in user programs?
+A2. Ensure loop conditions eventually become false, use counters, or add safety checks.
+
+Q3. Explain nested loops with example complexity analysis.
+A3. for(i=0;i<n;i++){ for(j=0;j<m;j++){ /*code*/ } } → O(n*m)
+
+Q4. How to modify a loop dynamically based on input inside the loop?
+A4. Adjust loop variable or condition inside loop body.
+
+Q5. How to exit multiple nested loops efficiently?
+A5. Use flag variables or goto to labeled statement.
+
+Q6. Can you have loops without increment/decrement statements? Example.
+A6. Yes, e.g., for(;;){/* infinite loop */} or while(condition){ modify variable inside body }
+
+Q7. How to skip specific iterations dynamically in a loop?
+A7. Use continue with conditional checks.
+
+Q8. Explain how to use loops to process multidimensional arrays.
+A8. Nested loops: outer loop for rows, inner loop for columns.
+
+Q9. How does modifying loop variable inside the loop body affect execution? Give example.
+A9. Can cause skipping or extra iterations. Example: for(int i=0;i<10;i++){ i++; }
+
+Q10. How to choose between recursion and loops for iterative problems?
+A10. Use loops for predictable iteration, recursion for tree/graph traversal or when natural recursion exists; consider stack usage.
