@@ -1,0 +1,83 @@
+1. Which of the following is an implicit type conversion?
+
+A. int x = 3.5;
+B. int x = (int)3.5;
+C. double y = static_cast<double>(5);
+D. float z = (float)7;
+✔ Answer: A (automatic conversion from double → int)
+
+2. What is explicit type casting also called in C++?
+
+A. Implicit conversion
+B. Type promotion
+C. Type coercion
+D. Type casting
+✔ Answer: D
+
+3. Which C++ cast operator is type-safe?
+
+A. C-style cast (int)x
+B. static_cast<int>(x)
+C. reinterpret_cast<int>(x)
+D. (int)x
+✔ Answer: B
+
+4. What happens when a double is assigned to an int?
+
+A. Compiler error
+B. Fractional part is truncated
+C. Rounds to nearest integer
+D. Stored as 0
+✔ Answer: B
+
+5. Which of the following correctly converts an int to a float?
+
+A. float f = 5;
+B. float f = (float)5;
+C. float f = static_cast<float>(5);
+D. All of the above
+✔ Answer: D
+
+6. Which type of conversion happens automatically when smaller type is assigned to larger type?
+
+A. Type casting
+B. Implicit conversion / Promotion
+C. Explicit conversion
+D. Narrowing conversion
+✔ Answer: B
+
+7. What is the result of this code?
+int a = 10;
+double b = a / 4;
+cout << b;
+
+
+A. 2.5
+B. 2
+C. 0
+D. 4
+✔ Answer: B (integer division happens first → 10/4 = 2 → converted to double → 2.0)
+
+8. Which cast allows converting any pointer type to any other pointer type?
+
+A. dynamic_cast
+B. reinterpret_cast
+C. static_cast
+D. const_cast
+✔ Answer: B
+
+9. Which cast removes constness from a variable?
+
+A. static_cast
+B. const_cast
+C. dynamic_cast
+D. reinterpret_cast
+✔ Answer: B
+
+10. What is the difference between implicit and explicit type conversion?
+
+A. Implicit requires ()
+B. Explicit happens automatically
+C. Implicit happens automatically, explicit requires casting operator
+D. Both are the same
+✔ Answer: C
